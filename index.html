@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link id="theme-mode" rel="stylesheet" href="css/darkmode.css" disabled />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <div class="round-background-left"></div>
+    <div class="round-background-right"></div>
+    <main>
+      <div class="phone-frame">
+        <div class="chat-container">
+          <header class="chat-header">
+            <div class="space"></div>
+            <div class="chat-header-content">
+              <div class="chat-user-info">
+                <div class="side">
+                  <img
+                    src="images/chevron_left_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
+                    alt="Back arrow"
+                    class="back-icon"
+                  />
+                  <img
+                    src="images/avatar.jpg"
+                    alt="User avatar"
+                    class="user-avatar"
+                  />
+                </div>
+                <div class="user-details">
+                  <div class="status-badge"></div>
+                  <p class="user-name">Samuel Green</p>
+                  <p class="user-status">Available to Walk</p>
+                </div>
+              </div>
+
+              <div class="icon-box">
+                <button class="mode-box">
+                  <img
+                    src="images/light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="light mode"
+                    class="light-mode-icon"
+                  />
+                  <img
+                    src="images/dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="dark mode"
+                    class="dark-mode-icon"
+                  />
+                </button>
+
+                <img
+                  src="images/more_vert_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
+                  alt="More options"
+                  class="options-icon"
+                />
+              </div>
+            </div>
+          </header>
+
+          <aside class="chat-message received">
+            <div class="message-bubble-top">
+              <p>That sounds great. I'd be happy to discuss more.</p>
+            </div>
+            <div class="message-bubble-top">
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+          </aside>
+
+          <aside class="chat-message sent">
+            <div class="message-images">
+              <img src="images/dog-image-1.jpg" alt="Dog 1" class="dog-image" />
+              <img src="images/dog-image-2.jpg" alt="Dog 2" class="dog-image" />
+              <img src="images/dog-image-3.jpg" alt="Dog 3" class="dog-image" />
+            </div>
+            <div class="message-bubble-middle">
+              <p>Here are a few pictures. She's a happy girl!</p>
+            </div>
+            <div class="message-bubble-middle-second">
+              <p>Can you make it?</p>
+            </div>
+          </aside>
+
+          <aside class="chat-message received-bottom">
+            <div class="message-bubble-bottom">
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+
+            <div class="pricing-option">
+              <div class="option-details">
+                <div class="circle"></div>
+                <p class="duration">30 minute walk</p>
+              </div>
+              <p class="price">$29</p>
+            </div>
+
+            <div class="pricing-option">
+              <div class="option-details">
+                <div class="circle"></div>
+                <p class="duration">1 hour walk</p>
+              </div>
+              <p class="price">$49</p>
+            </div>
+          </aside>
+          <div id="sent-popup" class="sent-popup">Message Sent</div>
+          <footer class="chat-footer">
+            <form class="message-form">
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Type a message…"
+                required
+              />
+
+              <div class="right-side-box">
+                <div id="recording-popup" class="recording-popup">
+                  Recording…
+                </div>
+                <button type="button" class="mic-button">
+                  <img
+                    src="images/mic_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="mic icon"
+                    class="mic-icon"
+                  />
+                </button>
+                <button type="submit" class="send-button">
+                  <img
+                    src="images/chevron_right_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
+                    alt="send icon"
+                    class="send-icon"
+                  />
+                </button>
+              </div>
+            </form>
+          </footer>
+        </div>
+      </div>
+
+      <section class="info-section">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+      <!-- </div> -->
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+  </body>
+</html>

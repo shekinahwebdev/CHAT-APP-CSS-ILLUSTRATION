@@ -1,0 +1,143 @@
+:root {
+  --Pale-Violet: hsl(276, 100%, 81%);
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+/* === General Dark Mode === */
+body.dark-mode {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+}
+
+/* === Phone Frame === */
+.phone-frame {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  box-shadow: 20px 20px 30px 2px rgb(18, 9, 32);
+}
+
+/* === Space === */
+.space {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+}
+
+/* === Chat === */
+.chat-container {
+  background-color: var(--Desaturated-Dark-Violet);
+}
+.user-avatar {
+  border: 1.5px solid rgb(18, 9, 32);
+}
+
+.user-name {
+  color: rgb(18, 9, 32);
+}
+
+.user-status {
+  color: var(--White);
+  color: rgb(18, 9, 32);
+}
+
+.chat-header {
+  background-image: linear-gradient(
+    to right,
+    var(--Very-Light-Magenta),
+    var(--Moderate-Violet)
+  );
+}
+
+.chat-footer {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+}
+
+/* === Messages === */
+.message-bubble-top,
+.message-bubble-middle,
+.message-bubble-middle-second,
+.message-bubble-bottom {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  color: var(--White);
+}
+
+/* === Pricing Options === */
+.pricing-option {
+  background-image: linear-gradient(
+    to right,
+    var(--Very-Light-Magenta),
+    var(--Moderate-Violet)
+  );
+}
+
+.circle {
+  border: 1px solid var(--Very-Dark-Desaturated-Violet);
+}
+
+/* === Inputs and Buttons === */
+#message {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+}
+
+input#message:focus {
+  color: var(--White);
+}
+
+.send-button,
+.mic-button {
+  background-color: var(--Desaturated-Dark-Violet);
+}
+
+.mic-button:hover,
+.send-button:hover {
+  background-color: var(--Dark-Grayish-Violet);
+}
+
+/* === Sent Popup === */
+.sent-popup {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  color: var(--White);
+}
+
+/* === Light Mode Toggle Box === */
+.mode-box {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+}
+
+.mode-box:hover {
+  background-color: var(--Very-Light-Magenta);
+}
+
+/* === Info Section === */
+.info-section h1,
+.info-section p {
+  color: var(--White);
+}
+
+/* === Backgrounds === */
+.round-background-right {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Moderate-Violet),
+    var(--Light-Violet)
+  );
+}
+
+.round-background-left {
+  background-color: var(--Light-Violet);
+}
+
+/* === Recording Popup === */
+.recording-popup {
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  color: var(--White);
+}
